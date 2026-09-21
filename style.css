@@ -106,95 +106,57 @@
     width: 100% !important;
   }
 }
-/* Improved Gallery */
+/* GALLERY - FINAL */
 .gallery-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 18px !important;
 }
 
 .gallery-grid > div {
-  height: 320px;
-  background: #e8efe9;
-  border-radius: 16px;
+  width: 100%;
+  height: 280px;
+  min-width: 0;
   overflow: hidden;
   position: relative;
+  border-radius: 16px;
+  background: #e8efe9;
 }
 
 .gallery-grid > div img {
   width: 100%;
   height: 100%;
   min-height: 0;
-  object-fit: contain;
   display: block;
+  object-fit: contain;
+  object-position: center;
 }
 
 .gallery-grid > div span {
   position: absolute;
   left: 12px;
   bottom: 12px;
-  background: rgba(5,64,45,.88);
-  color: white;
+  background: rgba(5, 64, 45, 0.90);
+  color: #fff;
   padding: 7px 12px;
   border-radius: 16px;
+  font-weight: 700;
 }
 
+/* Tablet */
 @media (max-width: 850px) {
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
   .gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .gallery-grid > div {
-    height: auto;
-    min-height: 300px;
-  }
-}
-/* Final Gallery Fix */
-.gallery-grid > div {
-  height: 280px !important;
-}
-
-.gallery-grid > div img {
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 0 !important;
-  object-fit: contain !important;
-  object-position: center !important;
-}
-
-@media (max-width: 480px) {
-  .gallery-grid > div {
-    height: 320px !important;
-  }
-}
-/* Gallery Desktop - 4 Cards */
-@media (min-width: 851px) {
-  .gallery-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-  }
-}
-/* FINAL GALLERY LAYOUT */
-@media screen and (min-width: 851px) {
-  section#gallery .gallery-grid {
-    display: grid !important;
-    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-    gap: 18px !important;
-  }
-
-  section#gallery .gallery-grid > div {
-    width: 100% !important;
-    min-width: 0 !important;
-    height: 280px !important;
-  }
-
-  section#gallery .gallery-grid img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
+    height: 320px;
   }
 }
