@@ -178,3 +178,23 @@
     grid-template-columns: repeat(4, 1fr) !important;
   }
 }
+/* FINAL GALLERY LAYOUT */
+@media screen and (min-width: 851px) {
+  section#gallery .gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+
+  section#gallery .gallery-grid > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 280px !important;
+  }
+
+  section#gallery .gallery-grid img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+}
