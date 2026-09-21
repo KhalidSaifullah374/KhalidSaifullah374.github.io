@@ -172,3 +172,9 @@
     height: 320px !important;
   }
 }
+/* Gallery Desktop - 4 Cards */
+@media (min-width: 851px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
