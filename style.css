@@ -154,3 +154,21 @@
     min-height: 300px;
   }
 }
+/* Final Gallery Fix */
+.gallery-grid > div {
+  height: 280px !important;
+}
+
+.gallery-grid > div img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+@media (max-width: 480px) {
+  .gallery-grid > div {
+    height: 320px !important;
+  }
+}
