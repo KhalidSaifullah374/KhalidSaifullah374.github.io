@@ -236,17 +236,72 @@
 </section>
 
 <section id="contact" class="section contact">
-  <div><p class="eyebrow">Get in Touch</p><h2>Contact</h2><p><b>Khalid Saifullah</b><br>Assistant Teacher (Arabic)<br>HAZRAT ABU BAKAR SIDDIQUE (R:) ISLAMIA KAMIL MADRASAH<br>Dhulihar, Satkhira<br>📞 <a href="tel:+8801744300374">+880 1744-300374</a>
-<div class="contact-buttons">
-  <a class="social-btn" href="tel:+8801744300374">📞 Call Me</a>
-  <a class="social-btn" href="https://wa.me/8801744300374" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
-  <a class="social-btn" href="https://www.facebook.com/mkhalid74" target="_blank" rel="noopener noreferrer">Facebook — Follow Me ↗</a>
-</div>
-  <form onsubmit="sendMessage(event)">
-    <input id="name" placeholder="আপনার নাম" required><input id="email" type="email" placeholder="ইমেইল" required>
-    <textarea id="message" placeholder="আপনার বার্তা" required></textarea><button class="btn" type="submit">Send Message</button>
-    <small id="formNote">ডেমো ফর্ম — প্রকাশের আগে আপনার ইমেইল/ফর্ম সার্ভিস যুক্ত করা যাবে।</small>
-  </form>
+  
+  <div class="contact-info">
+    <p class="eyebrow">Get in Touch</p>
+    <h2>Contact</h2>
+
+    <h3>Khalid Saifullah</h3>
+    <p>
+      Assistant Teacher (Arabic)<br>
+      HAZRAT ABU BAKAR SIDDIQUE (R:) ISLAMIA KAMIL MADRASAH<br>
+      Dhulihar, Satkhira
+    </p>
+
+    <p>
+      📞 <a href="tel:+8801744300374">+880 1744-300374</a>
+    </p>
+
+    <div class="contact-buttons">
+      <a class="social-btn" href="tel:+8801744300374">
+        📞 Call Me
+      </a>
+
+      <a class="social-btn"
+         href="https://wa.me/8801744300374"
+         target="_blank"
+         rel="noopener noreferrer">
+        💬 WhatsApp
+      </a>
+
+      <a class="social-btn"
+         href="https://www.facebook.com/mkhalid74"
+         target="_blank"
+         rel="noopener noreferrer">
+        Facebook ↗
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-form-card">
+    <h3>Send a Message</h3>
+    <p>Have a question or want to get in touch? Send me a message.</p>
+
+    <form onsubmit="sendMessage(event)">
+      <input id="name"
+             type="text"
+             placeholder="আপনার নাম"
+             required>
+
+      <input id="email"
+             type="email"
+             placeholder="আপনার ইমেইল"
+             required>
+
+      <textarea id="message"
+                placeholder="আপনার বার্তা"
+                required></textarea>
+
+      <button class="btn" type="submit">
+        Send Message
+      </button>
+
+      <small id="formNote">
+        Message form is currently being prepared.
+      </small>
+    </form>
+  </div>
+
 </section>
 </main>
 
