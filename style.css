@@ -160,3 +160,101 @@
     height: 320px;
   }
 }
+/* KHALID ACADEMY - FINAL DESIGN */
+
+#academy {
+  text-align: center;
+}
+
+#academy .academy-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+#academy > p:not(.eyebrow) {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+#academy > h3 {
+  color: #b58a2a;
+  margin-top: -5px;
+  margin-bottom: 18px;
+  letter-spacing: .5px;
+}
+
+#academy .academy-topics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+#academy .academy-topics article {
+  background: #ffffff;
+  border: 1px solid #e2ebe4;
+  border-radius: 16px;
+  padding: 24px 20px;
+  min-height: 190px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+#academy .academy-topics article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(5, 64, 45, .10);
+}
+
+#academy .academy-topics span {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+#academy .academy-topics h3 {
+  color: #06402d;
+  margin: 0 0 10px;
+}
+
+#academy .academy-topics p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+#academy .academy-action {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#academy .academy-action .social-btn {
+  display: inline-block;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  #academy .academy-topics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #academy .academy-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  #academy .academy-topics {
+    grid-template-columns: 1fr;
+  }
+
+  #academy .academy-topics article {
+    min-height: auto;
+    text-align: center;
+  }
+}
