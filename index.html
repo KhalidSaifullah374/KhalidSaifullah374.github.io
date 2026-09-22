@@ -419,6 +419,19 @@
 
 <footer><div class="footer-brand"><img src="khalid-academy-logo.png" alt="Khalid Academy logo"><div><b>Khalid Saifullah</b><br><small>Teaching | Learning | Serving Society</small></div></div><div class="arabic">وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ</div><div class="footer-links"><a href="https://www.facebook.com/mkhalid74" target="_blank" rel="noopener noreferrer">Facebook ↗</a><br><small>© 2026 Khalid Saifullah. All rights reserved.</small></div></footer>
 <script>
+  <script>
+function toggleArticle(id, button) {
+  const article = document.getElementById(id);
+
+  article.classList.toggle("show");
+
+  if (article.classList.contains("show")) {
+    button.textContent = "Close Article ↑";
+  } else {
+    button.textContent = "Read Article →";
+  }
+}
+</script>
 function sendMessage(event) {
   event.preventDefault();
 
