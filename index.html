@@ -306,5 +306,25 @@
 </main>
 
 <footer><div class="footer-brand"><img src="khalid-academy-logo.png" alt="Khalid Academy logo"><div><b>Khalid Saifullah</b><br><small>Teaching | Learning | Serving Society</small></div></div><div class="arabic">وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ</div><div class="footer-links"><a href="https://www.facebook.com/mkhalid74" target="_blank" rel="noopener noreferrer">Facebook ↗</a><br><small>© 2026 Khalid Saifullah. All rights reserved.</small></div></footer>
-<script src="script.js"></script>
+<script>
+function sendMessage(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const text =
+    "Website Message%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Email: " + encodeURIComponent(email) + "%0A%0A" +
+    "Message:%0A" + encodeURIComponent(message);
+
+  const whatsappURL =
+    "https://wa.me/8801744300374?text=" + text;
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
+  <script src="script.js"></script>
 </body></html>
