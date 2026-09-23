@@ -306,7 +306,32 @@
   </div>
 
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.querySelector(".menu");
+  const nav = document.querySelector(".site-header nav");
 
+  if (btn && nav) {
+    btn.onclick = function () {
+      if (nav.style.display === "flex") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "flex";
+        nav.style.flexDirection = "column";
+        nav.style.position = "absolute";
+        nav.style.top = "100%";
+        nav.style.left = "0";
+        nav.style.right = "0";
+        nav.style.background = "#ffffff";
+        nav.style.padding = "20px";
+        nav.style.zIndex = "9999";
+        nav.style.boxShadow = "0 10px 25px rgba(0,0,0,.08)";
+      }
+    };
+  }
+});
+</script>
+  
 <script src="script.js?v=2"></script>
 
 </body>
