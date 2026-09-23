@@ -454,3 +454,124 @@
     text-align: center;
   }
 }
+/* ABOUT ME - PROFESSIONAL DESIGN */
+
+.about-section {
+  background: #ffffff;
+}
+
+.about-heading {
+  margin-bottom: 35px;
+}
+
+.about-heading h2 {
+  margin-bottom: 0;
+}
+
+.about-main {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about-image-wrap {
+  background: #edf5ef;
+  padding: 15px;
+  border-radius: 24px;
+}
+
+.about-profile-photo {
+  width: 100%;
+  height: 420px;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 18px;
+}
+
+.about-content h3 {
+  margin: 0;
+  color: #06402d;
+  font-size: 30px;
+}
+
+.about-designation {
+  color: #16704f;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.about-content > p:not(.about-designation) {
+  max-width: 750px;
+  line-height: 1.85;
+  color: #46574f;
+}
+
+.about-content .btn {
+  margin-top: 10px;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 45px;
+}
+
+.about-highlights article {
+  background: #f7faf7;
+  border: 1px solid #e1eae3;
+  border-radius: 16px;
+  padding: 24px 20px;
+}
+
+.about-highlights span {
+  font-size: 28px;
+}
+
+.about-highlights h3 {
+  color: #06402d;
+  margin: 10px 0 8px;
+}
+
+.about-highlights p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  .about-main {
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+  }
+
+  .about-highlights {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .about-main {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-wrap {
+    max-width: 380px;
+    margin: auto;
+  }
+
+  .about-profile-photo {
+    height: auto;
+  }
+
+  .about-content {
+    text-align: left;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}
