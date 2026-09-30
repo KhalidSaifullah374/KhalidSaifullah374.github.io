@@ -681,3 +681,11 @@
     border-bottom: 0;
   }
 }
+/* Resource download button */
+a.btn {
+  color: #ffffff !important;
+}
+
+a.btn:hover {
+  color: #ffffff !important;
+}
