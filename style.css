@@ -681,17 +681,18 @@
     border-bottom: 0;
   }
 }
-/* Resource download button */
-a.btn {
-  color: #ffffff !important;
-}
 
-a.btn:hover {
-  color: #ffffff !important;
-}
+
+
 /* Available Resources heading */
 .resources-available-title {
   font-size: 30px;
   margin-top: 28px;
   margin-bottom: 24px;
+}
+/* Only resource download buttons */
+.resource-download,
+.resource-download:visited,
+.resource-download:hover {
+  color: #ffffff !important;
 }
